@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "9nsfw",
+  "version": "0.1",
+  "description": "View 9GAG NSFW posts without login",
+  "content_scripts": [
+    {
+      "matches": ["https://9gag.com/gag/*", "http://9gag.com/gag/*"],
+      "js": ["9nsfw.js"]
+    }
+  ],
+  "permissions": [
+    "https://img-9gag-fun.9cache.com/*"
+  ]
+}
